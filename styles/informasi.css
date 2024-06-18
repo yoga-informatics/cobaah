@@ -264,20 +264,36 @@ nav ul li a {
 }
 
 footer {
-  background: #003366;
+  background-color: #31304d;
   color: white;
-  padding: 50px 20px;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.footer-left h2 {
-  font-size: 2em;
+.footer-left,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-left h2,
+.footer-links h2,
+.footer-social h2 {
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
@@ -286,15 +302,11 @@ footer {
   line-height: 1.5;
 }
 
-.footer-links h2,
-.footer-social h2 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-}
-
 .footer-links ul,
 .footer-social ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li,
@@ -304,38 +316,73 @@ footer {
 
 .footer-links ul li a,
 .footer-social ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #4caf50;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social ul li {
+  margin: 0 10px;
+}
+
+.footer-social ul li img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  transition: transform 0.3s;
+}
+
+.footer-social ul li img:hover {
+  transform: scale(1.2); /* Scale up on hover */
 }
 
 .subscribe-form {
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.subscribe-form input {
+.subscribe-form input[type="email"] {
   padding: 10px;
   border: none;
   border-radius: 5px 0 0 5px;
   outline: none;
+  min-width: 200px;
 }
 
 .subscribe-form button {
-  padding: 10px 20px;
-  background: #f39c12;
+  padding: 10px;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
-  cursor: pointer;
+  cursor: poroer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #45a049;
 }
 
 .footer-bottom {
+  background-color: #222;
+  color: white;
   text-align: center;
-  font-size: 0.9em;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 10px;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .footer-bottom p {
-  margin: 10px 0;
+  margin: 0;
+  font-size: 0.9em;
 }
