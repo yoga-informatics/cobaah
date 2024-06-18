@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 /* Header */
@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo img {
@@ -25,6 +26,17 @@ body {
   margin-left: 20px;
 }
 
+.navbar a:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .navbar a {
   color: white;
   text-decoration: none;
@@ -32,10 +44,7 @@ body {
   font-size: 16px;
 }
 
-.navbar img {
-  width: 20px;
-  height: 20px;
-}
+
 
 /* Main Content */
 .main-content {
@@ -66,11 +75,9 @@ body {
   display: inline-block;
 }
 
-
 .team-member img {
   width: 100%;
   height: auto;
-  
 }
 
 .team-member h3 {
@@ -83,7 +90,7 @@ body {
 
 .team-member button {
   padding: 10px;
-  background-color: #0077B5; /* Warna biru LinkedIn */
+  background-color: #0077B5;
   color: white;
   border: none;
   border-radius: 5px;
@@ -92,13 +99,14 @@ body {
 }
 
 .team-member button:hover {
-  background-color: #005f91; /* Warna hover biru yang lebih gelap */
+  background-color: #005f91;
 }
+
 /* Footer */
 footer {
   background-color: #31304D;
   color: white;
-  padding: 0px 0px;
+  padding: 20px 20;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,7 +164,7 @@ footer {
 
 .footer-links ul li a:hover,
 .footer-social ul li a:hover {
-  color: #4CAF50;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-social ul {
@@ -169,13 +177,13 @@ footer {
 }
 
 .footer-social ul li img {
-  width: 24px; /* Adjust the size as needed */
-  height: 24px; /* Adjust the size as needed */
+  width: 24px;
+  height: 24px;
   transition: transform 0.3s;
 }
 
 .footer-social ul li img:hover {
-  transform: scale(1.2); /* Scale up on hover */
+  transform: scale(1.2);
 }
 
 .subscribe-form {
@@ -198,7 +206,7 @@ footer {
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
-  cursor: poroer;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -217,4 +225,68 @@ footer {
 .footer-bottom p {
   margin: 0;
   font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .team-member {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-social {
+    min-width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-section h2 {
+    font-size: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .footer-left h2,
+  .footer-links h2,
+  .footer-social h2 {
+    font-size: 1.2em;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input[type="email"] {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form button {
+    border-radius: 0 0 5px 5px;
+  }
 }
