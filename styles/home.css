@@ -1,0 +1,325 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header.hero {
+  background: url("../image/rajaampat.jpg") no-repeat center center/cover;
+  color: white;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 150px; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.lang-login {
+  display: flex;
+  align-items: center;
+}
+
+.lang img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.login-btn {
+  background-color: #31304d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #4caf50;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  color: white;
+  max-width: 800px; /* Set a maximum width to wrap the text */
+  margin: 0 auto; /* Center the text within the .hero-content */
+}
+
+.explore-btn {
+  background-color: #31304d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto; /* Center the button and add some spacing */
+  transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #4caf50;
+}
+
+main {
+  padding: 50px;
+}
+
+.popular-destinations {
+  text-align: center;
+}
+
+.popular-destinations h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.popular-destinations p {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+.destinations-slider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.destination-card {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  margin: 10px 0;
+}
+
+.destination-card .rating {
+  color: gold;
+}
+
+.lihat-btn {
+  background-color: #31304d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lihat-btn:hover {
+  background-color: #6aa5a4;
+}
+
+.destination-description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonials {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #31304d;
+  color: white;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-left h2,
+.footer-links h2,
+.footer-social h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #4caf50;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social ul li {
+  margin: 0 10px;
+}
+
+.footer-social ul li img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  transition: transform 0.3s;
+}
+
+.footer-social ul li img:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  min-width: 200px;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: poroer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #45a049;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}

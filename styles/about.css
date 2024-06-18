@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.header .logo {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.navbar img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-section {
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+}
+
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.team-member h3 {
+  margin: 15px 0 10px;
+}
+
+.team-member p {
+  color: #555;
+}
+
+.team-member button {
+  padding: 10px;
+  background-color: #0077B5; /* Warna biru LinkedIn */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.team-member button:hover {
+  background-color: #005f91; /* Warna hover biru yang lebih gelap */
+}
+/* Footer */
+footer {
+  background-color: #31304D;
+  color: white;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-left h2,
+.footer-links h2,
+.footer-social h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #4CAF50;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social ul li {
+  margin: 0 10px;
+}
+
+.footer-social ul li img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  transition: transform 0.3s;
+}
+
+.footer-social ul li img:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  min-width: 200px;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: poroer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #45a049;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}
